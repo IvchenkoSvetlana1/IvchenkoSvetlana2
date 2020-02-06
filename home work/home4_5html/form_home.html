@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<title>Forms</title>
+
+<body>
+
+<h1>Form</h1>
+
+<form id="my-form" class="my-form" action="contact.php" method="post">
+<input type="text" name="name2" id="name2" placeholder="First name" maxlength="30"/> 
+<input type="tel" name="tel2" id="tel2" placeholder="Telephone" maxlength="30"/> 
+<input type="email" name="email2" id="email" placeholder="E-mail" maxlength="8"/>
+<input type="textarea" name="textarea3" id="textarea3" placeholder="Comment" maxlength="140"/>
+<input type="button" value="Button"/>
+<button>send now</button>
+
+<form action="hendler.php" method="post">
+<fieldset>
+<legend>An awesome form</legend>
+
+<div>
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="name"/>
+</div>
+
+<div>
+<label for="pass">Password:</label>
+<input type="password" id="pass">
+</div>
+
+<div></div>
+<label><input type="checkbox" value="chk4" name="chk">Click</label>
+<label><input type="checkbox" value="chk4" name="chk">Or this click</label>
+<label><input type="checkbox" value="chk4" name="chk">Maybe this</label>
+<input type="checkbox" id="chk4" name="chk"/>
+<label for="chk4">This is ok</label>
+
+<input type="hidden">
+</div>
+
+<div>
+<label for="sel">Dropdown</label>
+<select id="sel">
+
+<option>Option 1</option>
+<option>Option 2</option>
+<option>Option 3<option>
+<option>Option 4</option>
+<option>Option 5</option>
+</select>
+</div>
+
+
+</form>		
+</body>
+</html>
