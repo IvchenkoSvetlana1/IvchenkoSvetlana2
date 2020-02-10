@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /author/
+Disallow: /feed/
+Allow: /catalog
+Sitemap: https://mamulintort/home_sitemap_index.xml
