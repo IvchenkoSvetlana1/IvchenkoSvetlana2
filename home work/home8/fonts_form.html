@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fonts</title>
+	<link rel="stylesheet" href="openSans/stylesheet.css"/>
+</head>
+
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	body{
+		color: #FF006E;
+		font-size: 14px;
+		/*font-family: 'open_sansbold_italic'*/
+	}
+
+	.main h1{
+		font-family: 'open_sansbold_italic';
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.main p{
+		font-size: 16px;
+		font-family: 'open_sansregular';
+		line-height: 25px;
+	}
+
+	.my-form h2{
+		font-family: 'open_sansextrabold_italic';
+		font-size: 25px;
+		text-align: left;
+		padding-left: 20px;
+		color: #0026FF;
+	}
+	/*
+	font-family: 'open_sansbold';
+	font-family: 'open_sansbold_italic';
+	font-family: 'open_sansextrabold';
+	font-family: 'open_sansextrabold_italic';
+	font-family: 'open_sansitalic';
+	font-family: 'open_sanslight';
+	font-family: 'open_sanslight_italic';
+	font-family: 'open_sansregular';
+	font-family: 'open_sanssemibold';
+	font-family: 'open_sanssemibold_italic';
+	*/
+
+	.abc{
+    color: #007F0E;
+    text-align: left;
+    display: block;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+		}
+		/*цвет зеленый*/
+
+	a{
+		color: #7F92FF;
+		/*цвет непосещенных ссылок бледно-голубой*/
+		}
+
+	a:visited{		
+  	   color: #39C4EC;
+  	   
+		/*цвет посещенных ссылок бирюзовый */
+  		}
+
+	a:hover{
+       color: #FF0000;
+       /*цвет ссылок при наведении на них курсором-красный*/
+      }
+
+   a:active{
+       color: #0046FF;
+       background: #B6FF00;
+       /*цвет активных ссылок, те пока нажата правая кнопка мыши, ярко-синий, жолтый фон*/
+      }
+
+   a:focus{
+		border:solid 2px #B200FF;
+		/*при щелчке цвет рамки сиреневый*/
+		}
+
+
+       
+	     
+</style>
+<body>
+
+<div class="main">
+		
+		<h1> Форма</h1>
+
+</div>
+		
+
+<form id="my-form" class="my-form" name="my-form">
+	<h2> Оформить заявку</h2>
+<input type="text" name="name" id="name" placeholder="First name" maxlength="30"/> 
+<input type="tel" name="tel" id="tel" placeholder="Telephone" maxlength="30"/> 
+<input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail" maxlength="30"/>
+<input type="comment" name="comment" id="comment" placeholder="Comment" maxlength="30"/>
+
+</form>	
+	
+
+
+
+<div class="abc">
+
+	<ul>
+	<li class="item"><a class="url" href="https://www.google.ua" >Главная</a></li>
+	<li class="item"><a class="url" href="https://www.yandex.ru" >О нас</a></li>
+	<li class="item"><a class="url" href="https://www.amazon.com" >Контакты</a></li>
+	
+	</ul>
+</div>
+</body>
+</html>
