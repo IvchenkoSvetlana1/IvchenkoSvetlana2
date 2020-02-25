@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formcss</title>
+	
+<style>
+
+*{
+	padding: 0;
+	margin: 0;
+ }
+
+.fon{
+	width: 100%;
+	position: static;
+}
+
+.form{
+	width: 260px;
+	height: 330px;
+	top:50%;
+	left:50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	border-radius: 6px;
+	background: #dcdcdc;
+	box-shadow: 0 0 10px #494949;
+}
+
+.zakaz{
+	
+}
+
+.title h1{
+	margin-top: 35px;
+	padding-bottom: 35px;
+	color: #c9564d;/*red*/
+	text-align: center;
+	font-size: 20px; 
+	text-transform: uppercase;
+}
+
+.text input{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  padding-left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+textarea{
+  
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  padding-left: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  resize: none;
+}
+
+.button input{
+  
+  width: 214px;
+  height: 40px;
+  margin-left: 25px;
+  border-radius: 6px;
+  border: none;
+  background: #c9564d;/*red*/
+  color: #FFFFFF;/*white*/
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+.button input:hover{
+	box-shadow: 0 0 10px #494949;
+	background: #C0C0C0;/*silver*/
+	color: #c9564d;
+ 
+}
+</style>
+</head>
+<body>
+	<body bgcolor="#666666">
+
+	<div class="fon">	
+
+		<div class="form">	
+				<form class="zakaz">
+					<div class="title">
+						<h1>Ваш вопрос</h1>
+					</div>
+
+					<div class="name text box">
+						<input type="text" name="name" placeholder="Имя" maxlength="40" required>
+					</div>
+
+					<div class="email text box">
+						<input type="email" name="email" placeholder="E-mail" maxlength="40" required>
+					</div>
+
+					<div class="comment text box">
+						<textarea name="comment" placeholder="Комментарий" maxlength="160"></textarea>
+					</div>
+
+					<div class="button box">
+						<input type="submit" value="Заказать">
+					</div>
+
+				</form>
+		</div>
+	</div>
+</body>
+</html>
