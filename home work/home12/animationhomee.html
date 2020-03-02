@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scalex</title>
+</head>
+<style>
+
+
+	@keyframes krug{
+		from{
+			top: 0;
+			left: 0;
+			background:#3B8B1E;
+			}
+
+			30%{
+				top: 0;
+				left: 400px;
+				
+    			}
+
+			60%{
+				top: 0;
+				left: 440px;
+				
+				}
+
+			80% {
+				top:400px;
+				left:0	
+				
+				}
+		
+				
+			to{
+				top:0;
+				top:0;
+		}
+	}
+
+	@keyframes kvadrat{
+		from{
+			top: 0;
+			left: 0;}
+
+			30%{
+				top: 0;
+				left: 400px;
+				background: #800080;}
+
+			60%{
+				top: 0px;
+				left: 100px;
+				}
+
+			80% {
+					top:400px;
+					left:0	
+				}
+		
+				
+				
+			to{
+				top:0;
+				top:0;
+		}
+	}
+
+		@keyframes treugolnik{
+		from{
+			top: 0;
+			left: 0;}
+
+			30%{
+				top: 0;
+				left: 400px;}
+
+			60%{
+				top: 0px;
+				left: 440px;
+				}
+
+			80% {
+					top:400px;
+					left:0;
+					background: #D2691E;	
+				}
+		
+				
+				
+			to{
+				top:0;
+				top:0;
+		}
+	}
+.scale_img{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border:solid 2px #000;
+	margin: 40px 0;
+}
+.scale_img img{
+	transition: all 2s ease-out;
+
+}
+
+.scale_img img:hover{
+	transform: scaleX(-1);
+}
+
+
+
+
+.krug{
+
+	 width: 120px;
+    height: 120px;
+    position: relative;
+    background: #7fee1d;
+    border-radius: 60px;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+    animation-name: krug;
+    
+}
+ 
+.kvadrat{
+    margin-top: 40px;
+    position: relative;
+	 width: 120px;
+    height: 120px;
+    background: #f447ff;
+    box-shadow: 0 0 10px 5px rgba(147, 
+    	112, 219);
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+    animation-name: kvadrat;
+    
+
+}
+
+
+.treugolnik{
+	margin-top: 40px;
+	position: relative;
+	width: 0;
+    height: 0;
+    border-bottom: 120px solid #fcf921;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    box-shadow:inset 0 0 15px rgba(255, 69, 0);
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+    animation-name: treugolnik;
+    animation-direction: alternate;
+    
+
+}
+
+  
+
+	
+	
+
+</style>
+<body>
+
+
+	
+	
+
+	<p class="krug">  	
+	</p>
+
+
+	<p class="kvadrat">	
+	</p>
+
+	<p class="treugolnik">
+	</p>
+	
+	<div class="scale_img">
+	<img src="img/ham.jpg" alt="img"/>
+	</div>
+		
+
+	
+		
+	
+</body>
+</html>
+
