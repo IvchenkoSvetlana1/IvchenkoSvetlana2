@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home14</title>
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+  }	
+
+body{
+	background: #778899;
+}
+.allpage {
+	display: flex;
+	min-height: 360px;
+	flex-direction: column;
+	padding-bottom: 30px;
+	align-items: center;
+	color: #FF4500;
+	font-size: 24px;
+	list-style: none;
+}
+
+.video {
+	padding:20px 20px 10px 20px;
+}
+
+.audio {
+	padding:20px 20px 10px 20px;
+}
+
+.spisok .star li{
+	 list-style: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.spisok .star li::before{
+	 content: '*';
+	 padding-right: 5px;
+    color: #FF8C00;
+
+}
+
+.paragraf1 {
+	color: #2F4F4F;
+	font-size: 20px;
+	margin-left: 25px;
+	padding:20px 20px 30px 20px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.paragraf1 p::first-letter{
+	color: #FF4500;
+	font-size: 60px;
+}
+.paragraf2{
+	color: #2F4F4F;
+	font-size: 20px;
+	margin-left: 25px;
+	padding:20px 20px 30px 20px;
+	line-height: 25px;
+
+}
+.paragraf2 span{
+	font-size: 60px;
+	color: #FF4500;
+	transform: translate(-150px, 0) scale(.3);
+	animation: leftRight .5s forwards;
+	animation-iteration-count: infinite;
+}
+
+@keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+		opacity: 1;
+		color: #348c04;
+	}
+
+	60% {
+		color: #0f40ba;
+	}
+
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+
+
+</style>
+
+
+<body> 
+	<div class="allpage">
+		<div class="video">
+	 		<video height="360px" muted autoplay loop>
+           <source src="video/video_opt.webm" type="video/webm" />
+            <source src="video/video_opt.mp4" type="video/mp4" />
+            <source src="video/video_opt.ogv" type="video/ogv" />
+         </video>	
+		</div>
+
+		<div class="audio">
+		 <audio controls>
+            <source src="audio/audiorain.mp3" type="audio/mp3" />
+          </audio>
+		</div>
+
+		<div class="spisok">
+			<ul class="star">
+            <li>star</li>
+            <li>star</li>
+            <li>star</li>
+            <li>star</li>
+            <li>star</li>
+            <li>star</li>
+          </ul>
+		</div>
+
+	<div class="paragraf1">
+	<p>Нумерованные списки представляют собой набор элементов с их порядковыми номерами. Вид и тип нумерации зависит от атрибутов тега, который и применяется для создания списка. Каждый пункт нумерованного списка обозначается тегом, как показано ниже.</p><br/>
+	</div>
+	
+<div class="paragraf2">
+	<span>М</span><strong>аркированный список определяется тем, что перед каждым элементом списка добавляется небольшой маркер, обычно в виде закрашенного кружка. Сам список формируется с помощью контейнера , а каждый пункт списка начинается с тега , как показано ниже.</strong>
+	</div>
+	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Float</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(img/fon2.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffcf00;
+    font-family: sans-serif;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    background: rgba(54, 49, 64, 0.96);
+    background-image: url(img/fon1.jpeg);
+    background-size: 100%;
+    background-position: center;
+  }
+
+  header div {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+
+    width: 80%;
+    text-align: center;
+    color:#FF00FF;
+    font-size: 35px;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    padding-top: 30px;
+  }
+
+  .main {
+    /* width: 100%; */
+    margin: 0 10%;
+  }
+
+  .start .img {
+    width: 35%;
+    height: 400px;
+    float: left;
+    padding: 20px;
+  }
+
+  .start img {
+    margin: 0;
+    height: 100%;
+    border: solid 1px rgba(255, 207, 0, 0.5);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    /*Шоб понимал Мозилла*/
+    -o-border-radius: 20px;
+    /*Для Оперы*/
+    -webkit-border-radius: 20px;
+    /*Для остальных*/
+
+  }
+
+  .start>.text {
+    width: 55%;
+    float: right;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  .container img {
+    width: 400px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    /*Шоб понимал Мозилла*/
+    -o-border-radius: 20px;
+    /*Для Оперы*/
+    -webkit-border-radius: 20px;
+    /*Для остальных*/
+
+  }
+
+  .friends {
+    width: 1000px;
+    height: 450px;
+    margin: 15px auto;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    /*Шоб понимал Мозилла*/
+    -o-border-radius: 20px;
+    /*Для Оперы*/
+    -webkit-border-radius: 20px;
+    /*Для остальных*/
+
+  }
+
+  .text {
+    width: 50%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  img {
+    margin: 20px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    float: right;
+    /*Шоб понимал Мозилла*/
+    -o-border-radius: 20px;
+    /*Для Оперы*/
+    -webkit-border-radius: 20px;
+    /*Для остальных*/
+
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+
+  .fl {
+    float: left;
+  }
+
+  .fr {
+    float: right;
+  }
+
+
+  .box {
+    width: 1000px;
+    height: 450px;
+    margin: 15px auto;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    /*Шоб понимал Мозилла*/
+    -o-border-radius: 20px;
+    /*Для Оперы*/
+    -webkit-border-radius: 20px;
+    /*Для остальных*/
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .up_button {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 35px;
+    bottom: 15px;
+  }
+
+  .back_button {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 35px;
+    top: 95px;
+  }
+</style>
+
+<body>
+
+  <header>
+   
+    <div>ТОП-10 сериалов 2019 года</div>
+  </header>
+
+  <div class="main">
+    <div class="friends">
+      <div class="text">
+        <h1>Сериалы, которые можно пересматривать бесконечно</h1>
+        <p>Сейчас нет проблемы, что посмотреть по телевизору или интернету, но не так уж и много тех сериалов, которые можно смотреть несколько раз и под разное настроение. Но к счастью есть мой любимый сериал "Друзья", это бестселлер, его можно смотреть всегда и всегда есть над чем посмеяться. </p>
+        
+      </div>
+      <div class="img">
+        <a class="friends"><img src="img/friends.jpeg" alt="friends"/>
+      </a>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="img fr">
+          <img src="https://miro.medium.com/max/1600/0*kqFBSZblZeXxBzX8.jpg" alt="City Destroyer">
+        </div>
+
+        <div class="text fl">
+          <h1>Разрушитель городов</h1>
+          <p>City Destroyer Invasion Mothership - из фильма День Независимости (Independance Day 1996). Гигантская летающая тарелка диаметром 24 километра! Как понятно из названия - одним мощным выстрелом уничтожает крупный город.</p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="box">
+        <div class="img fl">
+          <img src="https://miro.medium.com/max/481/0*RTulEzxKb23xNxlK.jpg" alt="Super Star Destroyer">
+        </div>
+
+        <div class="text fr">
+          <h1>Звёздный Суперразрушитель</h1>
+          <p>Звёздный суперразрушитель типа «Палач» (англ. Executor-class Super Star Destroyer) — <b>длина 19км</b>. Первый корабль из серии звёздных суперразрушителей (звездных дредноутов). Первый корабль из серии был флагманом Дарта Вейдера и стал
+            ассоциироваться в глазах многих жителей Галактики с Империей Палпатина. Корабль являлся абсолютным рекордсменом среди традиционных звездолетов, входивших в военно-космические силы Империи, — размерами его, на тот момент, превосходила
+            только Звезда Смерти.</p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="box">
+        <div class="img fr">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c7d85edd-b1b4-484b-a8df-44b9175e317a/dcqxc4j-bed74c7b-4a67-4d89-b5db-b2fd53cd7f51.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M3ZDg1ZWRkLWIxYjQtNDg0Yi1hOGRmLTQ0YjkxNzVlMzE3YVwvZGNxeGM0ai1iZWQ3NGM3Yi00YTY3LTRkODktYjVkYi1iMmZkNTNjZDdmNTEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.R2geeYWwBpQ8PpUj5kp6qC89yWJyr50dSzAhEAycGME"
+            alt="Vorlon Planet Killer">
+        </div>
+
+        <div class="text fl">
+          <h1>Планетоубийца, Ворлон</h1>
+          <p>Планетоубийца класса «Затмение» (англ. Eclipse) — длина 45 ки. Вымышленный корабль из вселенной научно-фантастического сериала «Вавилон-5». Данный корабль, согласно замыслу режиссера сериала, является самым мощным оружием Империи Ворлон.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="clear"></div>
+
+      <div class="box">
+        <div class="img fl">
+          <img src="https://miro.medium.com/max/800/0*TCGc5BkQmoyOZLtW.jpg" alt="Lexx">
+        </div>
+
+        <div class="text fr">
+          <h1>Lexx</h1>
+          <p>Космический корабль «Лексс» из одноименного телесериала 90-х — длина 10км. «Самое могущественное оружие разрушения в двух вселенных». Это огромный живой и разумный звездолёт, являющийся по своей сути насекомым: он очень похож на стрекозу
+            как внешне, так и по физиологии (он боится паутин и пауков, если они имеют космические размеры). Он предназначен для разрушения планет одним мощным выстрелом, чтобы затем проглотить биологические остатки и использовать их как топливо.
+            «Лексс» изначально был выращен для служения Его Божественной Тени, но позднее послужил для уничтожения учреждённого им «Священного Порядка».</p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="box">
+        <div class="img fr">
+          <img src="https://vignette.wikia.nocookie.net/ru.starwars/images/0/0f/Death_Stari.jpg/revision/latest?cb=20150601131320" alt="Звезда Смерти">
+        </div>
+
+        <div class="text fl">
+          <h1>Звезда Смерти</h1>
+          <p>В представлении не нужднается. Орбитальная боевая станция «Звезда Смерти I» (англ. Orbital battlestation «Death Star I»), также более известная как «Звезда Cмерти I» или «Великое оружие» (англ. Ultimate Weapon) — огромная имперская
+            боевая станция диаметром 160 км, разработанная для поддержки имперского Нового порядка по всей галактике. Один выстрел - минус одна планета. Но Люк Скайвокер показал им обратный принцип: один выстрел - минус одна Звезда Смерти. И конечно
+            же - that's no moon.</p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+
+
+    </div>
+
+    <div class="back_button">
+      <a href="hw_10.html">
+        <svg width="100%" height="100%">
+          <rect width="100%" height="100%" rx="20" opacity="0.65" />
+          <line x1="70%" y1="80%" x2="30%" y2="50%" stroke="#ffcf00" stroke-width="5%" stroke-linecap="round" />
+          <line x1="30%" y1="50%" x2="70%" y2="20%" stroke="#ffcf00" stroke-width="5%" stroke-linecap="round" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="up_button">
+      <a href="#">
+        <svg width="100%" height="100%">
+          <rect width="100%" height="100%" rx="20" opacity="0.65" />
+          <line x1="20%" y1="70%" x2="50%" y2="30%" stroke="#ffcf00" stroke-width="5%" stroke-linecap="round" />
+          <line x1="50%" y1="30%" x2="80%" y2="70%" stroke="#ffcf00" stroke-width="5%" stroke-linecap="round" />
+        </svg>
+      </a>
+    </div>
+
+
+
+</body>
+
+</html>
