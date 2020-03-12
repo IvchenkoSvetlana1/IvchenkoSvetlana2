@@ -1,0 +1,65 @@
+Create a page according to a mock-up.
+
+Requirements: 
+
+You should not use top, left, bottom or right properties in this task.
+ As well position property should not be changed. All elements should have
+ position property set to static (default value).
+
+Header:
+1. Distance between button and header edge should be 15px.
+2. Distance between button text and button edge should be 15px.
+3. Distance between buttons should be 20px;
+4. Buttons should be displayed in a row, not in a column. 
+Hint: use display property.
+
+Sidebar:
+
+1. Distance between endge of the sidebar and button should be 15px.
+2. Distance between sidebar and header - 40px.
+3. Width of one button should be 45% of the sidebar width.
+4. Margin to the right of each button should be 5% of sidebar width.
+5. Setting width to 45% will not do the task. Buttons will be bigger then 45%,
+ because they have padding. Use box-sizing property to fix this issue.
+5. Buttons should be displayed in line, not in column. 
+Hint: there are two ways to put buttons in line:
+  - using display property (Requires a hack: think of two buttons as of two 
+words with width 45% + 5% margin, which takes 100% of container and(!) 
+a space between them! how to make this space have 0 width?)
+  - using float property (requires preventing collapsing of parent height
+ - use clear property).
+
+Создайте страницу в соответствии с макетом.
+
+Требования:
+
+Вы не должны использовать свойства top, left, bottom или right в этой задаче.
+ Также не должно быть изменено свойство позиции. Все элементы
+ должны иметь свойство position, установленное в static (значение по умолчанию).
+
+Заголовок:
+1. Расстояние между кнопкой и краем заголовка должно составлять 15 пикселей.
+2. Расстояние между текстом кнопки и краем кнопки должно составлять 15 пикселей.
+3. Расстояние между кнопками должно быть 20 пикселей;
+4. Кнопки должны отображаться в строке, а не в столбце. 
+Подсказка: используйте свойство display.
+
+Боковая панель:
+
+1. Расстояние между краем боковой панели и кнопкой должно составлять 15 пикселей.
+2. Расстояние между боковой панелью и жаткой - 40px.
+3. Ширина одной кнопки должна составлять 45% ширины боковой панели.
+4. Поля справа от каждой кнопки должны составлять 5% ширины боковой панели.
+5. Установка ширины до 45% не сделает задачу. Кнопки будут больше, чем 45%, 
+потому что они имеют отступы. Используйте свойство box-sizing, 
+чтобы решить эту проблему.
+5. Кнопки должны отображаться в строке, а не в столбце.
+Подсказка: есть два способа поставить кнопки в ряд:
+  - использование свойства display (Требуется взлом: представьте,
+ что две кнопки состоят из двух слов с шириной 45% + 5% поля, 
+что занимает 100% контейнера и (!) пробел между ними! Как сделать так, 
+чтобы это пространство имело ширину 0? )
+  - использование свойства float 
+(требует предотвращения разрушения родительской высоты - используйте 
+свойство clear).
+  

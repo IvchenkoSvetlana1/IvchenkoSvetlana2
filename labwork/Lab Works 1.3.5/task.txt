@@ -1,0 +1,28 @@
+Create a page of newspaper like on the mock up.
+
+Requirements: 
+
+1. Use a background-image property to place background on the <body> element.
+2. You will need to use background position to set the top of the map to the top of the page.
+3. Header styles are next: distance betwwen letters - 4px, font - sans-serif, aling - center, weight - bold.
+4. Subheader styles are next: distance betwwen letters - 2px, font - cursive, aling - center, font-style - italic, weight - normal.
+5. List of links. All links should lead to google page with relevant query. Example: href="https://www.google.com.ua/?q=america"
+6. Link should be opened in a new tab.
+7. Link should has blue color, and once visited - darkgrey.
+8. Article: color - darkslategrey, indent of first line -20px.
+
+
+Создайте страницу газеты, как на макете.
+
+Требования:
+
+1. Используйте свойство background-image, чтобы поместить фон в элемент <body>.
+2. Вам нужно будет использовать положение фона, чтобы установить верх карты на верх страницы.
+3. Стиль заголовка следующий: расстояние между буквами - 4 пикселя, шрифт - без засечек, алинг - по центру, вес - жирный.
+4. Стили подзаголовков следующие: расстояние между буквами - 2 пикселя, шрифт - курсив, алинг - центр, стиль шрифта - курсив, вес - нормальный.
+5. Список ссылок. Все ссылки должны вести на страницу Google с соответствующим запросом. Пример: href = "https://www.google.com.ua/?q=america"
+6. Ссылка должна быть открыта в новой вкладке.
+7. Ссылка должна иметь синий цвет, а однажды посещенная - темно-серая.
+8. Артикул: цвет - darkslategrey, отступ первой строки -20px.
+Sozdayte stranitsu gazety, kak na makete.
+
