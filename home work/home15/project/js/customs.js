@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
 
     'use strict';
 
-	var slid = jQuery('#next-slider');
+	var slid = jQuery('#slider-fon');
 		
 	slid.owlCarousel({
 		items: 1,

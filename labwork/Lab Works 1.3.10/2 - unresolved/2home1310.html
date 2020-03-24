@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OOCSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+  body {
+  margin: 0;
+  padding-top: 75px;
+  }
+
+  .header {
+  position: fixed;
+  width: 100%;
+  margin-top: -75px;
+  background-color: #f7fdfe;
+  padding: 20px;
+  }
+
+  .header-button {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: darkseagreen;
+  border-radius: 3px;
+  border: solid 1px darkgreen;
+  
+  }
+
+  .button-text{
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  }
+
+  .nav-menu {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  margin: 10px;
+  width: 30%;
+  padding: 30px;
+  font-family: sans-serif;
+  border: 1px solid #0ebfdd;
+  }
+ 
+  .nav-menu > .menu-button {
+  display: block;
+  width: 100%;
+  background-color: darkseagreen;
+  border-radius: 3px;
+  border: solid 1px darkgreen;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  }
+
+  .content-block {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  width: 60%;
+  margin: 10px;
+  border: 1px solid #0ebfdd;
+  }
+
+  .text {
+  color: darkgray;
+  font-family: sans-serif;
+  padding: 30px;
+  }
+
+
+  
+
+
+</style>
+<body>
+  <header class="header">
+    <button class="header-button button-text">Store</button>
+    <button class="header-button button-text"> Contancts </button>
+    <button class="header-button button-text"> About us </button>
+  </header>
+  <div class="nav-menu">
+      <button class="menu-button button-text">Write us</button>
+      <button class="menu-button button-text">Call us</button>
+      <button class="menu-button button-text">Visit us</button>
+  </div>
+  <div class="content-block">
+    <div class="text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Rearrange css styles according to OOCSS methodology.
+1. Styles should be reused as much as possible. 
+2. Styles for layout and skin should be separated to different classes.
+
+
+Перегруппировать стили CSS в соответствии с методологией OOCSS.
+1. Стили следует использовать как можно больше.
+2. Стили для макета и скина должны быть разделены на разные классы.
