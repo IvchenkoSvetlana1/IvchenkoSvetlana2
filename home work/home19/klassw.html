@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="elem">text</div>
+	<div class="elem">text</div>
+	<div class="elem">text</div>
+
+	<div id="elem3">text</div>
+	<div id="elem4">text</div>
+
+<script>
+document.getElementByclassname("elem").innerHTML = 
+  "<div><span><b>text new</b></span></div>";
+</script>
+<script>
+  document.getElementById("elem3").innerHTML = 
+  "<div><span><b>1</b></span></div>";
+</script>
+<script>
+  document.getElementById("elem4").innerHTML = 
+  "<div><span><b>2</b></span></div>";
+</script>
+</body>
+</html>
+У вас есть 5 дивов у трех дивов один класс elem, нужно для класса текст сделать жирным и поменять текст на любой другой
+у двух остальных дивов у вас id для них нужно заменить текст на нумерацию
