@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	* {
+  padding: 0;
+  margin: 0;
+}
+
+.task 
+ {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 5px;
+	transition: all 5s;
+	background: purple;
+	border: 10px solid;
+	margin: 20px;
+	box-sizing: border-box;
+}
+.task
+
+.task p+p+p{
+	display: none;
+	transition: 5s;
+	margin: 5px;
+}
+.task button{
+	background:green;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.newinfo{
+		display: none;
+	}
+.newparagraf{
+	display: none;}
+
+.newparagraf1{
+	display: block;
+}
+
+.textyoucansee1{
+			display:block;
+		}
+		.textyoucansee{
+			display: none;
+		}
+
+</style>
+
+<body>
+
+
+         <!------!1)Создать функцию (внутри использовать getElementByid, style).  Есть абзац под ним кнопка подробнее. Нажать на кнопку открывается еще абзац. (15 балов)--->
+	<div class="task">
+		<p>Вначале идёт ключевое слово function, после него имя функции, затем список параметров в круглых скобках через запятую (в вышеприведённом примере он пустой) и, наконец, код функции, также называемый «телом функции», внутри фигурных скобок. <button type="button" name="button" id="button1" onclick="toggle1()">read more ...</button></p>
+
+		<p1 class="newinfo">Обратите внимание, что метод replaceWith() заменяет элемент на указанный в скобках другой элемент или строку, и после этого другие методы не работают. Поэтому нажмите на кнопку "Обновить", если хотите еще раз попробовать применить все методы.</p>
+	</div>
+
+<script type="text/javascript">
+	function toggle1() {
+    let but1 = document.getElementById("button1");
+    let p1 = document.querySelector(".newinfo");
+    p1.style.display = "block";
+};
+</script>
+
+<!-------2)Сложное задание (все тоже самое только чтобы при  нажатию на кнопку текст отобразился а кнопка пропала). slideDown(slow); slideUp(slow)------->
+
+<div class="task">
+		<p>Вначале идёт ключевое слово function, после него имя функции, затем список параметров в круглых скобках через запятую (в вышеприведённом примере он пустой) и, наконец, код функции, также называемый «телом функции», внутри фигурных скобок. <button type="button" name="button" id="button2" onclick="toggle2()">read more ...</button></p>
+
+		<p class="textyoucansee">Обратите внимание, что метод replaceWith() заменяет элемент на указанный в скобках другой элемент или строку, и после этого другие методы не работают. Поэтому нажмите на кнопку "Обновить", если хотите еще раз попробовать применить все методы.</p>
+	</div>
+	<script type="text/javascript">
+
+
+    function toggle2() {
+    let but2 = document.getElementById("button2");
+    let p = document.querySelector(".textyoucansee");
+    p.style.display = "block";
+    but2.style.display = 'none';
+   
+  };
+	</script>
+	
+	
+ 
+
+	
+<!--------3)toggle открыли абзац на кнопке поменялось название закрыть закрываем кнопкой меняется на открыть. Можно использовать добавлением класса addClass------>
+
+
+	<div class="task">
+		<p>Директива return может находиться в любом месте тела функции. Как только выполнение доходит до этого места, функция останавливается, и значение возвращается в вызвавший её код (присваивается переменной result выше).
+		<button type="button" name="button" id="button3" onclick="toggle3()">read more...</button></p>
+
+		<p class="newparagraf">Метод Math.max возвращает максимальное число из группы чисел, переданных в функцию.Если в функцию ничего не передано, то будет возращено -Infinity.По умолчанию функция не работает с массивами, однако с помощью хитрого приема можно найти максимальное значение массива: Math.max.apply(null, arr), где arr - произвольный массив.</p>
+	</div>
+
+     <script type="text/javascript">
+
+     	function toggle3() {
+    let but3 = document.getElementById('button3');
+    let p3 = document.querySelector('.newparagraf');
+    if (document.querySelector('.newparagraf') && document.querySelector('.newparagraf1')) {
+      p3.classList.remove('newparagraf1');
+      but3.innerHTML = 'read more...';
+    } else {
+      p3.classList.add('newparagraf1');
+      but3.innerHTML = 'hide...';
+    }};
+     </script>
+
+</body>
+</html>
+
+
+
+ 
+          
