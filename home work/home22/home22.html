@@ -11,18 +11,88 @@
    //1 IndexOf и lastIndexOf (Привет всем я люблю этот мир потому что я очень очень добрый,
    //найти совпадающее слова (очень и добрый). lastIndexOf (найти слово но).
 
+   let fraza = "Привет всем я люблю этот мир потому что я очень очень добрый";
+   document.write(fraza.indexOf("очень") + "/");
+   document.write(fraza.indexOf("очень", 43) + "/");
+   document.write(fraza.indexOf("добрый") + "/");
+   document.write(fraza.lastIndexOf("но") + "<br/>");
+  
+   
+
+
+
    //2 В функции вернуть 2,4 массив, остальные удалить
    //let arr = [1,2,3,4,5]
    //let result = arr.map(
-  //function(elem, index, arr)
-  //});
-  //document.write(result);//
+   //function(elem, index, arr)
+   //});
+   //document.write(result);
+
+   let arr2 = [1,2,3,4,5];
+   let result = arr2.map(
+   function(elem, index, arr)
+   {return elem;})
+   document.write(result + "<br/>");
+
+    delete arr2[0];
+    delete arr2[2];
+    delete arr2[4];
+    document.write(arr2);
+
+    
+    //2 второй вариант 
+    const numbers = [1,2,3,4,5];
+    const evenNumbers = numbers.filter(n => n%2==0)
+    document.write(evenNumbers);
 
 
   //3 Создать массив через метод new Map создать 8 ключей и их значениями. вывести количество  ключей значений, удалить 6,7,8 ключей после 
   //вывести по очереди все ключи и значения перебрав их через for of
 
+  let arr3 = new Map([
+          ['key1', 'value1'],
+          ['key2', 'value2'],
+          ['key3', 'value3'],
+          ['key4', 'value4'],
+          ['key5', 'value5'],
+          ['key6', 'value6'],
+          ['key7', 'value7'],
+          ['key8', 'value8']
+        ]);
+
+        document.write(arr3.size);
+
+        arr3.delete('key6');
+        arr3.delete('key7');
+        arr3.delete('key8');
+
+        for (let key of arr3.keys()) {
+          document.write( key + "<br/>");
+        };
+
+        for (let val of arr3.values()) {
+          document.write( val + "<br/>");
+        };
+
   //4 Создать объект с ключами Имя, должность, адрес и компания. после созданного объекта создать фамилию и удалить фирму. Вывести через документ все значения и ключи. 
+
+    let object = {
+          "name": "Svetlana",
+          "position": "Boss",
+          "address": "USA",
+          "company": "Corporation"
+        };
+
+        object["last name"] = "Adams";
+
+        delete object["company"];
+
+        document.write("name - " + object["name"] + "<br/>");
+        document.write("last name - " + object["last name"] + "<br/>");
+        document.write("position - " + object["position"] + "<br/>");
+        document.write("address - " + object["address"] + "<br/>");
+
+
 
 	</script>
 	
@@ -30,18 +100,3 @@
 </html>
 
 
-
-1) IndexOf и lastIndexOf (Привет всем я люблю этот мир потому что я очень очень добрый)
-найти совпадающее слова (очень и добрый). lastIndexOf (найти слово но).
-2)  В функции вернуть 2,4 массив, остальные удалить
-let arr = [1,2,3,4,5]
-let result = arr.map(
-  function(elem, index, arr)
-     
-});
-document.write(result);
-
-3) Создать массив через метод new Map создать 8 ключей и их значениями. вывести количество  ключей значений, удалить 6,7,8 ключей после 
-вывести по очереди все ключи и значения перебрав их через for of
-
-4) Создать объект с ключами Имя, должность, адрес и компания. после созданного объекта создать фамилию и удалить фирму. Вывести через документ все значения и ключи.
