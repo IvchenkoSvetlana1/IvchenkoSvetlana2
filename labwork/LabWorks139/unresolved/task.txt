@@ -1,0 +1,36 @@
+Create a page according to mock-up.
+
+Requirements: 
+
+Header:
+1. Header should be done using flex.
+2. Sign In button should be pulled right. Use margin-left: auto.
+
+Events:
+1.Date and price should be fixed - 200px. Description should take the rest of the space. Use flex property for it.
+
+Jobs
+1. Title columns should be fixed - 200px. 
+2. Title and description should have margin - 15px.
+3. Apply button should be pulled down. Create a flexbox from description element to make it.
+
+
+Создайте страницу в соответствии с макетом.
+
+Требования:
+
+Заголовок:
+1. Заголовок должен быть сделан с помощью flex.
+2. Кнопка входа должна быть нажата вправо. Используйте поле слева: авто.
+
+События:
+1. Дата и цена должны быть фиксированными - 200px. 
+Описание должно занять остальное пространство. Используйте свойство 
+flex для этого.
+
+работы
+1. Заголовки столбцов должны быть фиксированными - 200px.
+2. Название и описание должны иметь отступ - 15px.
+3. Кнопка «Применить» должна быть нажата. Создайте flexbox 
+из элемента description, чтобы сделать это.
+Sozdayte stranitsu v sootvetstvii s maketom.
