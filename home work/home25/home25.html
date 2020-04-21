@@ -4,7 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
-<style type="text/css"></style>
+<style type="text/css">
+	
+
+	.div_one{
+
+ position:relative;
+ float:left;
+ left:5px;
+ background-color:red;
+ width:300px;
+ height:300px;
+
+ }
+
+</style>
 <body>
 	<script type="text/javascript">
 		
@@ -41,7 +55,7 @@ let objectpersonal = {
       age: 30,
       lastname: "Smitt"
     },
-    objectjob = {
+  objectjob = {
       company: "Amazon",
       job: "developer",
       salary: 100000
@@ -50,16 +64,16 @@ let objectpersonal = {
 
 
        function copy() {
-      let temp = arguments[0];
-      for (var i = 1; i < arguments.length; i++) {
+     let summaryobject = arguments[0];//возьмет значения 
+      for (let i = 1; i < arguments.length; i++) {//начальная точка и условие, после сравнения идти дальше
         
-      let arg = arguments[i];
+      let arg = arguments[i];//создаем переменную неизвестной длинны
       for (let key in arg) {
-          temp[key] = arg[key];
+          summaryobject[key] = arg[key];
         }
       }
 
-      return temp;
+      return summaryobject;
     };
 
     result = copy(objectpersonal, objectjob);
@@ -67,10 +81,15 @@ let objectpersonal = {
    
 
 
+let d = document.createElement('div');
+
+ d.className='div_one';
+ d.innerHTML = 'Имя: ' + result.name + ' ' + result.lastname + ';<br/>'+'Возраст: ' + result.age + ';<br/>'+'Работает в компании: ' + result.company + ';<br/>'+'Должность: ' + result.job + ';<br/>'+'Заработная плата ' + result.salary + '.<br/>';
+ document.body.appendChild(d);
+
 
 	</script>
 
-
-
+	
 </body>
 </html>
