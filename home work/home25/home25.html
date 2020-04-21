@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css"></style>
+<body>
+	<script type="text/javascript">
+		
+/*Регулярные выражения
+текст(Привет студент, мне очень приятно что именно ты попал ко мне на курс. Ты самый лучший студент в мире, самы старательный и добрый) (10 балов)
+
+
+1) Найти в тексте слово (студент помощь ю метода в регулярных выражений)*/
+
+let text = "Привет студент, мне очень приятно что именно ты попал ко мне на курс. Ты самый лучший студент в мире, самый старательный и добрый";
+regex =/(студент)/ig;
+alert (text.match(regex));
+
+
+
+
+
+
+//2) Заменить слово студент на свое имя
+
+alert("Привет студент, мне очень приятно что именно ты попал ко мне на курс. Ты самый лучший студент в мире, самый старательный и добрый".
+replace (/студент/ig,"Светлана"));
+
+
+
+//3) Псевдоним массив arguments:
+/*3) Создать 3 объекта. первый объекта(имя, сколько лет, фамилия). Второй объект (работа, должность и зарплата)
+Нужно эти объекты скопировать с помощью arguments. Создать блок в body и передать все параметры в div
+P.S(придуманный персонаж) (30 балов)*/
+
+
+let objectpersonal = {
+      name: "Adam",
+      age: 30,
+      lastname: "Smitt"
+    },
+    objectjob = {
+      company: "Amazon",
+      job: "developer",
+      salary: 100000
+    },
+    result = {};
+
+
+       function copy() {
+      let temp = arguments[0];
+      for (var i = 1; i < arguments.length; i++) {
+        
+      let arg = arguments[i];
+      for (let key in arg) {
+          temp[key] = arg[key];
+        }
+      }
+
+      return temp;
+    };
+
+    result = copy(objectpersonal, objectjob);
+
+   
+
+
+
+	</script>
+
+
+
+</body>
+</html>

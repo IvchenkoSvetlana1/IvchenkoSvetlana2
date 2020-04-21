@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	  <script type="text/javascript">
+
+
+	  	//1) С помощью стрелочной функции вывести максимальное число и минимальное
+
+    let arr = () => alert(Math.max(189,46,100000000000,-0.59006));
+		arr();
+
+		let arr2 = () => alert(Math.min(0.00000007777,0,199999449949,697.987));
+		arr2();
+
+     //2) С помощью стрелочной функции использовать confirm спросить сколько сейчас часов? Если до 10 часов то вывести доброе утро, если с 11до 15 то вывести здравствуйте, если с 15 до 20 до вывести добрый вечер
+
+
+let vopros = prompt('What time is it?');
+    let hours = (vopros<= 10) ?
+      () => alert('Good Morning') :
+      (vopros > 10 && vopros <= 15) ?
+        () => alert('Hello') :
+        (vopros > 15 && vopros <= 20) ?
+          () => alert('Good Evening') :
+          () => alert('Good night');
+    hours();
+
+
+  </script>
+</body>
+</html>
+
