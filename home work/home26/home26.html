@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*1) Создать через метод open window. 
+- размер и высота окна 400 на 400
+- внутри окна написать какой то текст
+- разметить постараться по центру с помощю top и left
+- все остальные параметры отключить  (15 балов)*/
+
+let newWindow= window.open("https://www.gismeteo.ua/","test","menubar=no,status=no,resizable=no,scrollbars=yes,location=no, width=400,height=400,left=600,top=150");
+	
+let myWindow2 = window.open("","","width=250,height=250,top=350");
+    myWindow2.document.write("<p>1-задание-Создать через метод open window, размер и высота окна 400 на 400, разметить постараться по центру с помощю top и left, все остальные параметры отключить  (15 балов)</p>");
+
+/*2) Открыть окно через 2 секунды (7 балов)*/
+
+
+setTimeout(() =>window.open("https://ua.iherb.com"),2000); 
+
+/*3) Открыть окно через 2 секунды , и через 6 секунд закрыть (20 балов)*/  
+
+let myWindow3=window.open("","","width=400,height=400,left=500,top=550");
+    myWindow3.document.write("<p>3 задание-Открыть окно через 2 секунды , и через 6 секунд закрыть (20 балов)</p>");
+    setTimeout(function(){
+        myWindow3.open()
+},2000);
+
+  
+setTimeout(function(){ myWindow3.close() }, 6000);
+
+
+
+
+	</script>
+	
+</body>
+</html>
