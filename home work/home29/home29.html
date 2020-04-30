@@ -4,7 +4,156 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
-<body>
+
+<!---1) Создайте дерево, которое по клику на заголовок скрывает-показывает потомков:
+
+Фамилия
+ - Петров
+ - Васильев
+ - Муравьев
+ - Полюшко
+Имя Женское
+ - Катя
+ - Люда
+ - Маша
+ - Галя
+Имя Мужское
+ - Адриан
+ - Валентин
+ - Мурат
+ - Матвей
+2)  Сейчас при нажатии на кнопку скрывается и открывается нужно доработать, когда форма открылась менять тест закрыть форму email, делать через события и сованный класс желательно
+<button data-toggle-id="subscrible-mail">Показать форму подписки</button>
+<form id="subscrible-mail" hidden>
+ Ваша почта:<br />
+ <input type="email" placeholder="E-mail" />
+</form>
+
+
+<script>
+document.addEventListener('click', function(event){
+	let id = event.target.dataset.toggleId;
+	if(!id) return;
+	let elem = document.getElementById(id);
 	
+	elem.hidden = !elem.hidden;
+
+	});
+
+</script>--->
+
+<style>
+
+	ul{
+		list-style: none;
+		padding: 15px;
+		background: #C0C0C0;
+	}
+
+.surname, .woman, .man{
+	width: 250px;
+	cursor: pointer;
+	height: auto;
+	font-size: 20px;
+	color: #404040;
+	background: #808080;
+	text-align: center;
+	
+}
+.drop-downlist{
+	margin: 10px;
+}
+
+button{
+	
+	background: #404040;
+	color: #FFFFFF;
+}
+#writedown-email{
+	margin:10px;
+}
+#subscrible-mail{
+	margin: 10px ;
+}
+</style>
+<body>
+	 <!--1) Создайте дерево, которое по клику на заголовок скрывает-показывает потомков:-->
+
+
+<div class="drop-downlist">
+
+	<div data-toggle-id="surname" class="surname">
+		<h1>
+	        Family Tree</h1>
+		/Surname/
+		<ul id="surname" hidden>
+			<li>Петров</li>
+			<li>Васильев</li>
+			<li>Муравьев</li>
+			<li>Полюшко</li>
+		</ul>
+	</div>
+
+	<div id="name" data-toggle-id="woman" class="woman" >
+			/Female name/
+			<ul id="woman" hidden>
+			<li>Катя</li>
+			<li>Люда</li>
+			<li>Маша</li>
+			<li>Галя</li>
+		</ul>
+	</div>
+
+	<div id="name" data-toggle-id="man" class="man" >
+			/Male name/
+			<ul id="man" hidden>
+			<li>Адриан</li>
+			<li>Валентин</li>
+			<li>Мурат</li>
+			<li>Матвей</li>
+	</ul>
+	</div>
+
+	</div>
+
+<script>
+
+	document.addEventListener('click', function(event){
+	let id = event.target.dataset.toggleId;
+	if(!id) return;
+	let elem = document.getElementById(id);
+	elem.hidden = !elem.hidden;
+
+});
+
+</script>
+
+<!--2) нужно доработать, когда форма открылась менять тест закрыть форму email, делать через события и сованный класс желательно------>
+
+<button style="width: 180px;height: 40px;"
+id="writedown-email" 
+data-toggle-id="subscrible-mail">
+show form for email
+</button>
+
+
+
+<form id="subscrible-mail" hidden>
+
+your email address:<br />
+ <input type="email" placeholder="E-mail" />
+</form>
+
+<script>
+
+	let btn = document.getElementById("writedown-email");
+	btn.addEventListener('click', function() {
+  	btn.innerHTML =
+    	(btn.innerHTML ===  "show form for email") ? 
+    	 btn.innerHTML = "show form for email" : 
+    	 btn.innerHTML = "hide form for email";
+	});
+</script>
+
 </body>
 </html>

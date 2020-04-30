@@ -4,9 +4,135 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+<style media="screen">
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 10px;
+
+  }
+   button {
+    padding: 15px;
+    margin: 20px;
+    font-size: 25px;
+    color: pink;
+  }
+.div{
+	padding: 10px;
+	margin: 20px;
+	width:105px;
+	height:85px;
+}
+
+.photo-img {
+	   margin: 10px;
+		position: relative;
+		width:500px;
+		height: 500px;
+		overflow: hidden;
+	}
+
+.container {
+		position: absolute;
+		max-width: 100%;
+		max-height: 100px;
+	}
+.second {
+		z-index: -1;
+	}
+
+.btn-img {
+		margin-left: 300px;
+		margin-top: 5px;
+		width: 100px;
+		height: 95px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+
+ img{
+	margin: 10px;
+}
+
+  
+</style>
+
 <body>
-	1) Обратись ко всем тегам div (3 тега div с текстом) поменяй фон на зеленый. А для тега (a) сделать при клике синий цвет. (50 балов)
-2) Добавить две картинки машины разные, сделать изменение onchange меняется картинка
- (50 балов)
+	<!---1) Обратись ко всем тегам div (3 тега div с текстом) поменяй фон на зеленый. А для тега (a) сделать при клике синий цвет. (50 балов)
+-->
+	<div class="div"> 
+    <a onclick="blue()">first div</a></div>
+
+  <div class="div">
+    <a onclick="blue()">second div</a></div>
+
+  <div class="div">
+    <a onclick="blue()">third div</a></div>
+
+  <button onclick="green()">push</button>
+  
+
+<script type="text/javascript">
+
+let div = document.getElementsByTagName('div');
+let a = document.getElementsByTagName('a');
+
+  function green() {
+    for (i = 0; i <= div.length; i++) {
+      div[i].style.background = 'green';
+      div[i].style.color = 'white';
+    }
+  };
+
+  function blue() {
+    for (i = 0; i <= div.length; i++) {
+      a[i].style.background = 'blue';
+      a[i].style.color = 'white';
+    }
+  };
+
+</script>
+
+ 
+<br>
+<br>
+<!---2задание Добавить две картинки машины разные, сделать изменение onchange меняется картинка (50 балов)--->
+<div1 class="photo-img">
+	<div class="container foto_img"><img src="img/photo1.jpg" alt="img"></div>
+	<div class="container second"><img src="img/photo2.jpg" alt="img"></div>
+</div1>
+
+<button class="btn-img" onclick="changeimg()">Change image</button>
+
+
+<script>
+	let click = 0;
+	function changeimg(){
+		let changer = document.getElementsByClassName("foto_img");
+		click += 2;
+		if (click%2==0) {
+			changer[0].style.display = 'none';
+			click +=1;
+		}else {
+			changer[0].style.display = 'block';
+			click +=1;
+		}
+	}
+</script>
+ 
+
+    <!---2) Добавить две картинки машины разные, сделать изменение onchange меняется картинка
+ (50 балов)-->
+
 </body>
 </html>
