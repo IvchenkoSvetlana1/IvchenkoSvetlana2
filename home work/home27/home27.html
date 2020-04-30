@@ -4,7 +4,98 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+
+	<style type="text/css">
+		
+/*1) Сделать Лабораторную "Window – Lab Work – 20 mins" (20 балов)
+Window свойства дз
+2)  Получить количество элементов в окне*/
+/*3) Получить ширину и высота окна браузера*/
+/*4) При прокрутки отлавливать в px сколько я прокрутил высота и ширина браузера 3000 на 3000
+ */
+    
+    
+   
+.procrutka{
+  width: 3000px;
+  height: 3000px;
+}
+/*
+.scroll {
+position: sticky;
+top: 0;
+margin: 2em;
+}
+*/
+  
+.scroll {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+    
+</style>
+
+
 <body>
+	
+ <div class ="video">
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/EjFRulacSCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/EjFRulacSCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/EjFRulacSCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/EjFRulacSCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  
+</div>
+
+<div><button onClick="myFunction1()">Колличество элементов</button></div>
+<div><button onClick="myFunction2()">Ширина и высота браузера</button></div>
+<div><div class="scroll"><button onClick="myFunction3()">Прокрутка</button></div></div>
+
+
+
+
+
+
+<div id="valuehw"></div>
+
+<div class="procrutka"></div>
+
+<script type="text/javascript">
+
+	//колличество элементов//
+  function myFunction1(){
+    let x = window.length;
+    document.getElementById("valuehw").innerHTML = x;
+   }
+
+   //ширина и высота браузера//
+function myFunction2(){
+   let w = window.innerWidth;
+   let h = window.innerHeight;
+   
+   document.getElementById("valuehw").innerHTML = "Width" + w + "<br /> Height" + h;
+   }
+//прокрутка//
+ 
+function myFunction3(){
+let scroll = document.documentElement;
+alert("Вы прокрутили "+ scroll.scrollTop +"px этой страницы по вертикали");
+let scroll2 = document.documentElement;
+alert("Вы прокрутили "+ scroll2.scrollLeft +"px этой страницы по горизонтали");
+}
+
+
+	</script>
+
+
+
+
+
+
+
+
 	
 </body>
 </html>
