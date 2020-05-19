@@ -4,36 +4,81 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+<style type="text/css">
+	
+	button{
+		background: #E0FFFF;
+		margin: 5px;
+	}
+</style>
 <body>
+
+
+<div><button onClick="opennewWin()">Open new window</button></div>
+<div><button onClick="resizenewWin()">Resize New window</button></div>
+<div><button onClick="resizecurrentWindow()">Reduce current window size</button></div>
+<div><button onClick="scrollnewWin()">Horizontal scroll of the new window</button></div>
+<div><button onClick="scrollcurrentWin()">Scroll of the current window</button></div>
+<div><button onClick="focusnewWin()">Focus to new window/Blur</button></div>
+<div><button onClick="closenewWin()">Close new window</button></div>
+<div><button onClick="printcurrentWin()">Print current window</button></div>
+
 	<script>
 	
-	let Window;
- 
- function openWin(){
-	  Window = window.open("","Window","width=400,height=200,left=300,top=200");
-	  Window.document.write("<p>Window</p>");
-	 }
-	 function resizeWin() {
-  Window.resizeTo(500, 500);                                       
-}
-function resizeB() {
-    window.resizeBy(600, 600);
-        }
- function scrolll() {
-           Window.scrollBy(100, 2000);
-        }
-function scrolld() {
-           window.scrollTo(200, 250);
-        }
-function focusWin(){
-	Window.focus();
-}
- setTimeout (function focusBlurWin(){
-	Window.blur()},3000);
+	let NewWindow;
 
-         function closeWin() {
-  Window.close();                                       
-}
+ 
+
+ //Open new window
+ function opennewWin(){
+ 	NewWindow = window.open("","My new window","toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+	
+   NewWindow.document.write("<p>Это окно имеет имя:" + NewWindow.name +".</р>");
+ }
+
+	
+//Resize New window//
+ function resizenewWin() {
+	NewWindow.resizeTo(500, 500);                                       
+	}
+
+
+//Reduce current window size
+function resizecurrentWindow() {
+	window.resizeBy(400, 400);
+   }
+
+
+//Horizontal scroll of the new window//
+ function scrollnewWin() {
+	NewWindow.scrollBy(100, 0);
+   }
+
+
+//Scroll of the current window//
+function scrollcurrentWin() {
+	window.scrollTo(200, 250);
+   }
+
+
+//Focus to new window  //Focus Blur 
+function focusnewWin() {
+	NewWindow.focus();
+	setTimeout (() => NewWindow.blur(), 3000);
+   }
+
+
+
+//Close new window
+function closenewWin() {
+  NewWindow.close();                                       
+  }
+
+
+//Print current window
+function printcurrentWin(){
+	window.print();
+   }
 </script>
 </body>
 </html>

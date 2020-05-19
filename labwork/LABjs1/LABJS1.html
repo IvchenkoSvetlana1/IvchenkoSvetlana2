@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style media="screen">
+  body {
+    padding-left: 50px;
+  }
+
+  .paragraph_1 {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  button {
+    margin: 0 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+</style>
+<body>
+	<div>
+    <h2>Список свойст</h2>
+    <button id="button" onclick="toggle()">Показать</button>
+    <p class="paragraph_1"></p>
+
+    <h2>Открыть новое окно</h2>
+    <button onclick="newWin()">Кнопкъ</button>
+    <button onclick="">Свойства нового окна</button>
+
+    <h2>Сделать новое окно размером 500х500</h2>
+    <button onclick="newWinResize()">Кнопкъ</button>
+
+    <h2>Увеличть размеры этого окна на 300рх в ширину и 200px в высоту</h2>
+    <button onclick="thisWinResize()">Кнопкъ</button>
+
+    <h2>Прокрутка нового окна, 100px по горизонтали</h2>
+    <button onclick="newWinScroll()">Кнопкъ</button>
+
+    <h2>Прокрутка этого окна в координаты 200х250</h2>
+    <button onclick="thidWinScroll()">Кнопкъ</button>
+
+    <h2>Фокус на новое окно</h2>
+    <button onclick="newWinFocus()">Кнопкъ</button>
+
+    <h2>Закрыть новое окно</h2>
+    <button onclick="newWinClose()">Кнопкъ</button>
+  </div>
+
+
+  <script type="text/javascript">
+  	function props() {
+    document.querySelector('.paragraph_1').innerHTML = '<br/>Closed - ' + window.closed +
+      '<br/>Console - ' + window.console +
+      '<br/>defaultStatus - ' + window.defaultStatus +
+      '<br/>document - ' + window.document +
+      '<br/>frameElement - ' + window.frameElement +
+      '<br/>frames - ' + window.frames +
+      '<br/>history - ' + window.history +
+      '<br/>innerHeight - ' + window.innerHeight +
+      '<br/>innerWidth - ' + window.innerWidth +
+      '<br/>length - ' + window.length +
+      '<br/>localStorage - ' + window.localStorage +
+      '<br/>location - ' + window.location +
+      '<br/>name - ' + window.name +
+      '<br/>navigator - ' + window.navigator +
+      '<br/>opener - ' + window.opener +
+      '<br/>outerHeight - ' + window.outerHeight +
+      '<br/>outerWidth - ' + window.outerWidth +
+      '<br/>pageXOffset - ' + window.pageXOffset +
+      '<br/>pageYOffset - ' + window.pageYOffset +
+      '<br/>parent - ' + window.parent +
+      '<br/>screen - ' + window.screen +
+      '<br/>screenLeft - ' + window.screenLeft +
+      '<br/>screenTop - ' + window.screenTop +
+      '<br/>screenX - ' + window.screenX +
+      '<br/>screenY - ' + window.screenY +
+      '<br/>sessionStorage - ' + window.sessionStorage +
+      '<br/>scrollX - ' + window.scrollX +
+      '<br/>scrollY - ' + window.scrollY +
+      '<br/>self - ' + window.self +
+      '<br/>status - ' + window.status +
+      '<br/>top - ' + window.top;
+  };
+
+  	function toggle() {
+    let btn = document.getElementById('button');
+    let p = document.querySelector('.paragraph_1');
+    if (document.querySelector('.paragraph_1') && document.querySelector('.active')) {
+      p.classList.remove('active');
+      btn.innerHTML = 'Показать';
+    } else {
+      p.classList.add('active');
+      btn.innerHTML = 'Скрыть...';
+      props();
+    }};
+
+    let win1;
+    function newWin() {
+      win1 = window.open('','_blank','width=300,height=300,left=200,top=100');
+      win1.document.write('<style>body{width:3000px; height: 2000px;}</style><body><p class="paragraph_1"></p></body>');
+    };
+
+
+    function newWinResize() {
+      win1.resizeTo(500, 500);
+    }
+
+    function thisWinResize() {
+      window.resizeBy(300, 200);
+    }
+
+    function newWinScroll() {
+      win1.scrollBy(100, 0);
+    }
+
+    function thidWinScroll() {
+      window.scrollTo(200, 250);
+    }
+
+    function newWinFocus() {
+      win1.focus();
+      setTimeout(() => win1.blur(), 3000);
+    }
+
+    function newWinClose() {
+      win1.close();
+      window.print();
+    }
+  </script>
+</body>
+</html>

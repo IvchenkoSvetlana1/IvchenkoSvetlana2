@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<style type="text/css">
+	#button{
+		margin: 10px;
+		padding: 5px;
+		color: #4800FF;
+		font-size: 26px;
+	   width: 165px;
+	   height: 65px;
+
+	}
+</style>
+<body>
+
+	
+	
+		<!---Сделать кнопку при наведении мыши она зеленая, как уводим мыши она становится желтая//--->
+
+
+   <button id="button">push</button>
+
+   <script type="text/javascript">
+
+		window.onload = function() {
+          document.getElementById("button").onmouseover = function()
+          {
+              this.style.backgroundColor = "#7FFF8E";
+          }
+
+          document.getElementById("button").onmouseout = function()
+          {
+              this.style.backgroundColor = "#DAFF7F";
+          }
+      }
+
+
+</script>
+	
+
+
+
+  
+
+</body>
+</html>

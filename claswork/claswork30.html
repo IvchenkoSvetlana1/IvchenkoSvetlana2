@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+
+	input{
+		width: 100%;
+		padding: 8px;
+		margin-bottom: 15px;
+		outline: none;
+		font-size: 14px;
+		max-width: 300px;
+		display: block;
+	}
+	input[type-submit]{
+		background: #0D2059;
+		color: #fff;
+	}
+</style>
+<body>
+	<div class="container">
+		<form acion="/acion_page.php">
+			<label for="username">имя пользователя</label>
+			<input type="text" id="username" name="username"required/>
+			<label for="rsw">пароль</label>
+			<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required/>
+			<input type="submit" value="отправить"/>
+		</form>
+	</div>
+
+	<div class="message">
+		<h3>Пароль должен быть в контейнере </h3>
+		<div id="letter" class="invalid">Маленькие буквы</div>
+		<div id="capital" class="invalid">БОльшие буквы</div>
+		<div id="number" class="invalid">Число</div>
+		<div id="lenght" class="invalid">Минимум восемь символов</div>
+		
+	</div>
+</body>
+</html>
