@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!--1) Вывести документ все объекты и разпарсить. Файл JSON.html  33lesson31git
+    2) Файл XML-Parse, который мы получили в документ HTML, получить все параметры-->
+
+    <script type="text/javascript">
+    	
+
+    	let obj = { "name":"John", "age":30, "city":"New York"};
+    	let objStr =JSON.stringify(obj);
+      let myJSON =  JSON.stringify(obj);
+      let obj_PARSE = JSON.parse(myJSON);
+      document.write(objStr+"</br>")
+      document.write(obj_PARSE.name+" - "+obj_PARSE.age+" - "+obj_PARSE.city+"<br>"+"<br>"); 
+
+     	let obj2 = { "name":"Kamil", "age":27, "city":"Oman"};
+     	let objStr2 =JSON.stringify(obj2);
+      let myJSON2 =  JSON.stringify(obj2);
+      let obj_PARSE2 = JSON.parse(myJSON2);
+      document.write(objStr2+"</br>")
+      document.write(obj_PARSE2.name+" - "+obj_PARSE2.age+" - "+obj_PARSE2.city+"<br>"+"<br>"); 
+
+      let obj3 = { "name":"O'Raily", "age":60, "city":"Dublin"};
+      let objStr3 =JSON.stringify(obj3);
+      let myJSON3 =  JSON.stringify(obj3);
+      let obj_PARSE3 = JSON.parse(myJSON3);
+      document.write(objStr3+"</br>")
+      document.write(obj_PARSE3.name+" - "+obj_PARSE3.age+" - "+obj_PARSE3.city+"<br>"+"<br>"); 
+
+      let obj4 = { "name":"Ivan", "age":45, "city":"Tula"};
+      let objStr4 =JSON.stringify(obj4);
+      let myJSON4 =  JSON.stringify(obj4);
+      let obj_PARSE4 = JSON.parse(myJSON4);
+      document.write(objStr4+"</br>")
+      document.write(obj_PARSE4.name+" - "+obj_PARSE4.age+" - "+obj_PARSE4.city+"<br>"+"<br>"); 
+
+
+
+
+
+   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!--1) У lessons 33  папка local-project players. Рапарсить и вывести в html документ-->
+
+
+
+
+<script type="text/javascript">
+
+
+
+let player1 = {
+ "lastname": 'Руни',
+ "firstname": 'Уэйн',
+ "team": "Эвертон",
+ "citizen": "Великобритания",};
+ let player1Str =JSON.stringify(player1);
+  let myJSON =  JSON.stringify(player1);
+ let player1_parse = JSON.parse(myJSON);
+ document.write(player1_parse.lastname+" - "+player1_parse.firstname+" - "+player1_parse.team+" - "+player1_parse.citizen+" - "+"<br>"+"<br>"); 
+
+
+let player2 = {
+  "lastname": 'РОналдо',
+ "firstname": 'Криштиано',
+ "team": 'Реал',
+  "citizen": 'Португалия',};
+let player2Str =JSON.stringify(player2);
+  let myJSON2 =  JSON.stringify(player2);
+ let player2_parse = JSON.parse(myJSON2);
+ document.write(player2_parse.lastname+" - "+player2_parse.firstname+" - "+player2_parse.team+" - "+player2_parse.citizen+" - "+"<br>"+"<br>"); 
+
+let player3 = {
+  "lastname": 'Месси',
+ "firstname": 'Лионель',
+ "team":'Барселона',
+  "citizen": 'Аргентина',
+ };
+let player3Str =JSON.stringify(player3);
+  let myJSON3 =  JSON.stringify(player3);
+ let player3_parse = JSON.parse(myJSON3);
+ document.write(player3_parse.lastname+" - "+player3_parse.firstname+" - "+player3_parse.team+" - "+player3_parse.citizen+" - "+"<br>"+"<br>"); 
+
+let player4 = {
+  "lastname": 'Мбаппе',
+ "firstname":'Килиан',
+ "team": 'Монако',
+  "citizen": 'Франция',
+ };
+let player4Str =JSON.stringify(player4);
+  let myJSON4 =  JSON.stringify(player4);
+ let player4_parse = JSON.parse(myJSON4);
+ document.write(player4_parse.lastname+" - "+player4_parse.firstname+" - "+player4_parse.team+" - "+player4_parse.citizen+" - "+"<br>"+"<br>"); 
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

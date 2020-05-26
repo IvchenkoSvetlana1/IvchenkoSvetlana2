@@ -1,0 +1,7 @@
+"players":
+[
+{"lastname": "Руни", "firstname": "Уэйн", "team": "Эвертон", "citizen": "Великобритания"},
+{"lastname": "Роналдо", "firstname": "Криштиано", "team": "Реал", "citizen": "Португалия"},
+{"lastname": "Месси", "firstname": "Лионель", "team": "Барселона", "citizen": "Аргентина"},
+{"lastname": "Мбаппе", "firstname": "Килиан", "team": "Монако", "citizen": "Франция"}
+]

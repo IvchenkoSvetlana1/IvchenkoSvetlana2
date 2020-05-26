@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+<!-- Файл XML-Parse, который мы получили в документ HTML, получить все параметры	-->
+<script type="text/javascript">
+	
+
+	let xmlStr =
+    '<?xml version="1.0" encoding="UTF-8"?><books><book><name>Евгений Онегин </name><type>Роман </type><author birthday="06.06.1799">Пушкин А. С. </author></book><book><name>Война и Мир </name><type>Роман </type><author birthday="09.09.1828">Толстой Л. Н. </author></book><book><name>Колобок </name><type>Сказка </type><author birthday="02.08.1865">Андреева Е. </author></book></books>';
+
+let parser = new DOMParser();
+
+xmlDoc = parser.parseFromString(xmlStr, "text/xml");
+document.write("Название книги"+" "+"- " + xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue + "</br>");
+document.write("Жанр"+" " +"- "+ xmlDoc.getElementsByTagName("type")[0].childNodes[0].nodeValue + "</br>");
+document.write("Автор"+" "+"- " + xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue + "</br>"+ "</br>");
+
+
+document.write("Название книги"+" "+"- " + xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue + "</br>");
+document.write("Жанр"+" "+"-" + xmlDoc.getElementsByTagName("type")[1].childNodes[0].nodeValue + "</br>");
+document.write("Автор"+" " +"- "+ xmlDoc.getElementsByTagName("author")[1].childNodes[0].nodeValue + "</br>"+"</br>");
+
+
+document.write("Название книги"+" "+"- " + xmlDoc.getElementsByTagName("name")[2].childNodes[0].nodeValue + "</br>");
+document.write("Жанр"+" "+"- " + xmlDoc.getElementsByTagName("type")[2].childNodes[0].nodeValue + "</br>");
+document.write("Автор"+" "+"- " + xmlDoc.getElementsByTagName("author")[2].childNodes[0].nodeValue + "</br>"+"</br>");
+
+
+</script>
+
+</body>
+</html>
